@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="tests">
+  <parameter name="browser" value="firefox"/>
+  <test name="chromeTest(failed)" parallel="tests">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="scripts.s1">
+        <methods>
+          <include name="precondition"/>
+          <include name="precondition"/>
+          <include name="postcondition"/>
+          <include name="postcondition"/>
+        </methods>
+      </class> <!-- scripts.s1 -->
+      <class name="scripts.s2">
+        <methods>
+          <include name="logoutscript"/>
+          <include name="postcondition"/>
+          <include name="postcondition"/>
+          <include name="precondition"/>
+          <include name="precondition"/>
+        </methods>
+      </class> <!-- scripts.s2 -->
+    </classes>
+  </test> <!-- chromeTest(failed) -->
+  <test name="firefoxTest(failed)" parallel="tests">
+    <parameter name="browser" value="firefox"/>
+    <classes>
+      <class name="scripts.s1">
+        <methods>
+          <include name="precondition"/>
+          <include name="precondition"/>
+          <include name="postcondition"/>
+          <include name="postcondition"/>
+        </methods>
+      </class> <!-- scripts.s1 -->
+      <class name="scripts.s2">
+        <methods>
+          <include name="logoutscript"/>
+          <include name="postcondition"/>
+          <include name="postcondition"/>
+          <include name="precondition"/>
+          <include name="precondition"/>
+        </methods>
+      </class> <!-- scripts.s2 -->
+    </classes>
+  </test> <!-- firefoxTest(failed) -->
+</suite> <!-- Failed suite [Suite] -->
